@@ -1,0 +1,87 @@
+.Polaris-Navigation {
+
+  .Polaris-Navigation__Section--Custom .Polaris-SkeletonBodyText {
+    margin-left: 0;
+    margin-right: -4.6rem;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  &__Section {
+
+    &--Custom {
+      padding-left: 1.2rem;
+      padding-right: 0.4rem;
+      margin: 0 .8rem;
+      padding-bottom: 1rem;
+    }
+
+    &--withSeparator {
+      padding-top: 1.2rem;
+    }
+  }
+
+  .Polaris-Badge--statusNew {
+    background-color: var(--p-surface-success, #bbe5b3);
+    color: var(--p-text, #414f3e);
+  }
+
+  .AppNavigation__Skeleton {
+
+    .Polaris-SkeletonBodyText {
+      height: .8rem;
+      margin-top: .9rem;
+      padding: 0 8.6rem;
+    }
+  }
+
+  .Polaris-SkeletonThumbnail {
+    margin-left: 1.6rem;
+    margin-bottom: 0.4rem;
+    margin-right: 0.8rem;
+
+    &--sizeSmall {
+      height: 2.6rem;
+      width: 2.6rem;
+    }
+  }
+
+  .Polaris-Stack__Item {
+    flex: 0 0 auto;
+    min-width: 8rem;
+  }
+
+  .Polaris-External-Nav {
+    .Polaris-Stack__Item {
+      min-width: unset;
+    }
+  }
+
+  .Polaris-SkeletonBodyText {
+    height: 0.5rem;
+    position: relative;
+    margin-top: 1.1rem;
+    padding: 0 7.6rem;
+    margin-left: -4.6rem;
+  }
+
+  .Polaris-SkeletonDisplayText {
+
+    &--sizeMedium {
+      height: 3.2rem;
+      margin-right: .5rem;
+      margin-left: -1rem;
+    }
+
+    &--sizeSmall {
+      height: 2.2rem;
+      margin-left: -0.4rem;
+      margin-right: 3rem;
+      margin-bottom: .4rem;
+    }
+  }
+  
+  .spacer-bottom {
+    margin-bottom: 2.5rem;
+  }
+}

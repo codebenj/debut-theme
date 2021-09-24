@@ -1,0 +1,24 @@
+.mentoring-winners {
+  .Polaris-ResourceItem__Actions {
+    display: flex !important;
+  }
+
+  .Polaris-ResourceItem__Disclosure {
+    display: none;
+  }
+
+  .Polaris  {
+
+    &-ResourceItem__Content {
+
+      h3 {
+        text-transform: capitalize;
+      }
+    }
+
+    &-Button--plain {
+      pointer-events: none;
+      color: var(--p-text, #212b36);
+    }
+  }
+}

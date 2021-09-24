@@ -1,0 +1,198 @@
+#app-checkout {
+  #AppFrameLoadingBar .Polaris-Frame-Loading {
+    top: 0;
+  }
+
+  .Polaris-Header-Title, .Polaris-SkeletonPage__Title {
+    .Polaris-Card__Section {
+      padding: .8rem;
+    }
+  }
+
+  .DiscountCode-Warning-Container, .Discount-Container {
+    .Polaris-Banner {
+      margin: 0;
+    }
+  }
+
+  .Polaris-PaymentMethod {
+
+    .Polaris-Card__Section {
+      padding: 0;
+      position: relative;
+    }
+
+    .Polaris-ToggleCard__Button {
+      padding: 1rem 1.6rem;
+    }
+
+    .Polaris-ResourceList {
+        border: 0;
+    }
+  
+    .Polaris-ResourceItem__Container {
+        padding: 0;
+        padding-right: 1.6rem;
+  
+        span[class*="TextStyle"] {
+          filter: brightness(1);
+        }
+    }
+
+    .Polaris-ResourceItem__ListItem {
+        &:first-of-type {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+      }
+    }
+
+    .Paypal-img {
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+      left: 42px;
+    }
+  }
+
+  .Polaris-Choice-Custom {
+    padding-right: 0;
+  }
+
+  .Polaris-BillingCycle {
+
+    .Polaris-ResourceList {
+        border: 0;
+    }
+  
+    .Polaris-ResourceItem__Container {
+        padding: 0;
+        padding-right: 1.6rem;
+  
+        span[class*="TextStyle"] {
+          filter: brightness(1);
+        }
+    }
+  
+    .Polaris-ResourceItem__ListItem {
+  
+        &:first-of-type {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+      }
+    }
+
+    .Polaris-Choice {
+      width: 75%;
+    }
+
+    .Polaris-Choice__Descriptions {
+      position: absolute;
+      top: 16px;
+      z-index: -1;
+      right: 1.6rem;
+      padding: 0;
+      width: 32%;
+      text-align: right;
+    }
+
+    @media (max-width: 27.625em){
+      .Polaris-Choice__Descriptions {
+        top: 8px;
+      }
+    }
+  }
+
+  .Polaris-RadioButton__CreditCard {
+
+    &--add {
+      padding: 1.6rem 1.6rem 2rem;
+    }
+
+    .Polaris-Choice {
+      padding: 1.6rem;
+      margin: 0;
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+    }
+
+    .Polaris-Choice__Descriptions {
+      padding-left: 1.6rem;
+      padding-bottom: 1.4rem;
+    }
+
+    .Polaris-TextContainer {
+      margin-bottom: 1.6rem;
+    }
+
+    .Polaris-Button--plain {
+      margin: 0 0 0 2rem;
+      padding: 0;
+    }
+
+    .Polaris-Card__Section {
+      padding: 0.1em;
+      position: relative;
+    }
+
+    .Polaris-Choice__Label {
+      font-weight: 600;
+    }
+
+    .Paypal-img {
+      position: absolute;
+      left: 45px;
+      top: 50%;
+      z-index: 0;
+      margin-top: -8px;
+    }
+  }
+
+  .Polaris-Button__CouponToggle {
+    margin: -1.55rem -2rem;
+
+    .Polaris-Button {
+      border: 0;
+      box-shadow: none;
+      background: transparent;
+
+      .Polaris-Button__Content {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .terms-box {
+
+    .Polaris-Choice {
+      padding: 0;
+    }
+  }
+
+  .PayPal_Button-Container {
+    position: relative;
+
+    > button:first-of-type {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      opacity: 0;
+
+      ~ div {
+        position: relative;
+        z-index: 0;
+      }
+    }
+  }
+
+  .Polaris-Stack__BillingCycle{
+    .Polaris-Stack {
+      flex-wrap: nowrap;
+    }
+  }
+
+}

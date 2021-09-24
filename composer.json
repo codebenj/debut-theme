@@ -1,0 +1,133 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rifleby/activecampaign-v3-php"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "drewm/mailchimp-api": "^2.5",
+        "enlightn/enlightn": "^1.22",
+        "fideloper/proxy": "^4.2",
+        "firebase/php-jwt": "^5.2",
+        "fruitcake/laravel-cors": "^1.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "intercom/intercom-php": "^4.4",
+        "intervention/image": "^2.5",
+        "jenssegers/agent": "^2.6",
+        "laracasts/utilities": "^3.2",
+        "laravel/cashier": "^12.13",
+        "laravel/framework": "^7.0",
+        "laravel/sanctum": "^2.8",
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.0",
+        "maatwebsite/excel": "^3.1",
+        "mailerlite/mailerlite-api-v2-php-sdk": "^0.2.3",
+        "mediatoolkit/activecampaign-v3-php": "dev-master",
+        "osiset/laravel-shopify": "^16.0",
+        "paypal/rest-api-sdk-php": "^1.14",
+        "pulkitjalan/google-apiclient": "^4.1",
+        "revolution/laravel-google-sheets": "^5.3",
+        "sendgrid/sendgrid": "^7.3",
+        "sentry/sentry": "^3.3",
+        "sentry/sentry-laravel": "^2.6",
+        "spatie/laravel-newsletter": "^4.2",
+        "spatie/laravel-sitemap": "^5.7",
+        "stripe/stripe-php": "^7.36",
+        "tymon/jwt-auth": "^1.0"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.0",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "files": [
+            "app/Helpers/helpers.php",
+            "app/Helpers/helper_theme_updater.php",
+            "app/Helpers/live_view_addon.php",
+            "app/Helpers/cookibox_addon.php",
+            "app/Helpers/delivery_time_addon.php",
+            "app/Helpers/addtocart_animation_addon.php",
+            "app/Helpers/sales_pop_addon.php",
+            "app/Helpers/product_tab_addon.php",
+            "app/Helpers/instagram_feed_addon.php",
+            "app/Helpers/chat_box_addon.php",
+            "app/Helpers/faq_page_addon.php",
+            "app/Helpers/sticky_addtocart_addon.php",
+            "app/Helpers/product_video_addon.php",
+            "app/Helpers/shop_protect_addon.php",
+            "app/Helpers/mega_menu_addon.php",
+            "app/Helpers/newsletter_popup_addon.php",
+            "app/Helpers/collection_addtocart_addon.php",
+            "app/Helpers/upsell_popup_addon.php",
+            "app/Helpers/discount_saved.php",
+            "app/Helpers/sales_countdown_addon.php",
+            "app/Helpers/inventory_quantity_addon.php",
+            "app/Helpers/linked_options.php",
+            "app/Helpers/cart_countdown.php",
+            "app/Helpers/trust_badge_addon.php",
+            "app/Helpers/color_swatches_addon.php",
+            "app/Helpers/cart_discount_addon.php",
+            "app/Helpers/upsell_bundles_addon.php",
+            "app/Helpers/skip_cart_addon.php",
+            "app/Helpers/smart_search_addon.php",
+            "app/Helpers/quick_view_addon.php",
+            "app/Helpers/cart_goal_addon.php",
+            "app/Helpers/pricing_table_addon.php",
+            "app/Helpers/wish_list_addon.php",
+            "app/Helpers/quantity_break_addon.php",
+            "app/Helpers/page_transition_addon.php",
+            "app/Helpers/age_check_addon.php",
+            "app/Helpers/Diff.php",
+            "app/Helpers/color_picker.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

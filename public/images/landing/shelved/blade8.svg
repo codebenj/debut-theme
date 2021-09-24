@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Moho 13.0.2 build 610 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Frame_0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280px" height="200px">
+<g id="slash">
+<path fill="none" stroke="#000000" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" d="M -6.150 159.659 C 423.523 115.961 853.198 72.264 1282.872 28.566 C 1283.503 88.644 1283.947 210.844 1283.947 210.862 C 1283.818 210.861 -5.107 206.812 -5.236 206.812 C -5.236 206.807 -6.150 159.664 -6.150 159.659 C -6.150 159.642 -7.064 -7.558 -7.064 -7.574 C -6.935 -7.575 1282.205 -9.762 1282.334 -9.762 C 1282.334 -9.758 1282.730 15.109 1282.872 28.566 "/>
+<path fill="#5600e3" fill-rule="evenodd" stroke="none" d="M -6.150 159.659 C 423.523 115.961 853.198 72.264 1282.872 28.566 C 1283.503 88.644 1283.947 210.844 1283.947 210.862 C 1283.818 210.861 -5.107 206.812 -5.236 206.812 C -5.236 206.807 -6.150 159.664 -6.150 159.659 Z"/>
+<path fill="none" stroke="#000000" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" d="M -6.150 159.659 C 423.523 115.961 853.198 72.264 1282.872 28.566 C 1283.503 88.644 1283.947 210.844 1283.947 210.862 C 1283.818 210.861 -5.107 206.812 -5.236 206.812 C -5.236 206.807 -6.150 159.664 -6.150 159.659 C -6.150 159.642 -7.064 -7.558 -7.064 -7.574 C -6.935 -7.575 1282.205 -9.762 1282.334 -9.762 C 1282.334 -9.758 1282.730 15.109 1282.872 28.566 "/>
+</g>
+<g id="Layer_2">
+<path fill="none" stroke="#5600e3" stroke-width="14" stroke-linejoin="round" d="M 1284.869 -127.400 C 1088.880 -107.698 892.891 -87.995 696.902 -68.293 "/>
+<path fill="none" stroke="#2dffb3" stroke-width="14" stroke-linejoin="round" d="M -27.484 300.783 C 143.911 283.026 315.305 265.270 486.699 247.514 "/>
+<path fill="none" stroke="#5600e3" stroke-width="9" stroke-linejoin="round" d="M -28.186 291.902 C 176.691 271.213 381.568 250.525 586.445 229.836 "/>
+<path fill="none" stroke="#5600e3" stroke-width="9" stroke-linejoin="round" d="M -207.010 -8.243 C 12.354 -32.143 231.719 -56.043 451.084 -79.943 "/>
+<path fill="none" stroke="#2dffb3" stroke-width="13" stroke-linejoin="round" d="M 1284.635 -120.327 C 1061.540 -98.115 838.445 -75.902 615.350 -53.690 "/>
+</g>
+</svg>

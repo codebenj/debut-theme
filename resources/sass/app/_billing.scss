@@ -1,0 +1,18 @@
+#app-billing {
+
+  .Polaris-Page__Content .Polaris-Layout__Section + div {
+    border-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .Polaris-List__Unstyled {
+    .Polaris-List {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+  .TrialText-Container {
+    margin-top: 0;
+  }
+}

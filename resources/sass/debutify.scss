@@ -1,0 +1,842 @@
+// Debutify
+@import "~@shopify/polaris/dist/styles.css";
+
+// Variables
+@import './app/variables';
+
+.spacer {
+  margin: 1.6rem;
+}
+
+small,.small{
+  font-size: small;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+.sm-show{
+  display: none;
+
+  @media (max-width: $sm) {
+    display: block;
+  }
+}
+.text-muted {
+  color: $muted !important;
+}
+.question-icon{
+  cursor: pointer;
+}
+.badge-wrapper{
+  position: absolute;
+  top: -12px;
+  width: 100%;
+  left: 0;
+  right:0;
+  text-align: center;
+}
+.Polaris-Button--sizeLarge.Polaris-Button--loading .Polaris-Button__Content{
+  line-height: 1.6rem!important;
+}
+.Polaris-Plain-Link {
+  color: #2c6ecb;
+}
+.mt{
+  margin-top: $gutter;
+}
+.mb{
+  margin-bottom: $gutter;
+}
+
+// grid
+.container-fluid{
+  padding: 0;
+}
+.row{
+  margin-left: -$gutter/2;
+  margin-right: -$gutter/2;
+  margin-top: -$gutter;
+
+  @media (max-width: $sm){
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.col, [class*="col-"]{
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+  margin-top: $gutter;
+
+  @media (max-width: $sm){
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+// end grid
+
+.Polaris-FormLayout__Item iframe{
+  border-radius: 6px;
+}
+
+#provesrc-widget-area,#provesrc-notification-container{
+  z-index:10!important;
+}
+
+// empty state
+@media (min-width: 46.5em){
+	.Polaris-EmptyState__Section{
+		left: 0;
+	}
+}
+.Polaris-EmptyState__Details{
+  width: 38.6rem!important;
+  @media (max-width: $sm){
+    width: 100%!important;
+  }
+}
+
+.main{
+  display: flex;
+}
+.page-header{
+  border-bottom: $border;
+  padding-bottom: $spacer;
+  margin-bottom: $spacer;
+}
+
+//nav
+.nav-plan{
+  padding: $gutter $spacer;
+}
+.Polaris-Navigation__Section{
+  display: flex;
+  flex-direction: column;
+}
+.Polaris-Navigation__Icon{
+  align-self: center;
+}
+.Polaris-Navigation__Text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-1{
+  flex: 1;
+}
+.open-menu{
+  display: flex;
+}
+.active-nav{
+  font-weight: 600!important;
+  color: #202e78!important;
+  background-color: rgba(92,106,196,.12)!important;
+
+  svg{
+    fill: #5c6ac4!important;
+    color: #fff!important;
+  }
+}
+.btn-open-nav-container{
+  @media (max-width: $sm){
+    display: block!important;
+  }
+}
+.btn-open-nav{
+  .Polaris-Icon{
+    margin-left: inherit;
+    margin-right: 5px;
+    line-height: 1;
+  }
+}
+.btn-close-nav{
+  margin-bottom: $spacer;
+  .Polaris-Icon{
+    margin-left: inherit;
+    margin-right: 5px;
+    line-height: 1;
+  }
+  @media (max-width: $sm){
+    display: block!important;
+  }
+}
+//main page container
+.page-container{
+  margin-left:24rem;
+  width: 100%;
+
+  @media (max-width: $sm){
+    margin-left:0;
+  }
+}
+
+.stripe-custom-input{
+  border: .1rem solid #C0CCD4;
+  border-radius: 3px;
+  padding: 0.8rem 1.2rem;
+  transition: all 0.2s ease;
+}
+.StripeElement--focus{
+  box-shadow: 0 0 0 2px #576CC2;
+  border-color: transparent;
+  border-radius: 2px;
+}
+@media (max-width: 30.625em){
+  .layout-item{
+    padding: 0 $spacer;
+  }
+}
+.discount-price,.discount-price-monthly{
+  text-decoration: line-through;
+}
+form.Polaris-Modal__BodyWrapper{
+	-webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.type--centered {
+  text-align: center;
+}
+.ui-type-container>*:not(.hide)+* {
+  margin-top: $spacer;
+}
+.modal-open{
+  overflow: hidden;
+}
+.Polaris-Choice{
+  padding:$spacer;
+  margin:0;
+  width: 100%;
+  cursor: pointer;
+}
+
+//other
+.custom-avatar{
+  border-radius: 0;
+  .Polaris-Avatar__Image{
+    background-color: inherit;
+    border-radius: 0;
+    object-fit: contain;
+  }
+}
+.Polaris-Badge{
+  font-weight: 600!important;
+}
+.page-title{
+  text-transform: capitalize;
+}
+.Polaris-Modal-Dialog__Modal{
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  animation: modalAnimation .2s cubic-bezier(.64,0,.35,1);
+}
+
+@keyframes modalAnimation {
+  0% {
+      opacity: 0;
+      transform: scale(1.15);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+.Polaris-Button__Content{
+  line-height: $spacer;
+}
+
+.Polaris-Banner{
+  margin: $spacer 0px;
+}
+.theme-nav{
+  .Polaris-ButtonGroup__Item{
+    flex:1;
+  }
+  .Polaris-Button{
+    width: 100%;
+  }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(244,246,248,0.4);
+    z-index: 9999;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.Polaris-ResourceList-Item__Container{
+  align-items: center;
+}
+
+.Polaris-ResourceList{
+  border-top: $border;
+}
+.Polaris-SkeletonThumbnail{
+  margin-left: 4rem;
+  margin-right: 2.8rem;
+}
+.Polaris-CalloutCard__Image{
+  width: 12rem;
+  display: block;
+}
+@media (min-width: 28.625em){
+  .Polaris-ResourceList-Item__Container {
+      padding: $spacer $spacer;
+  }
+}
+
+.Polaris-Card-Banner{
+    margin: $spacer 0px;
+}
+
+.Polaris-FooterHelp__Content{
+  background-color: #f4f6f8;
+}
+
+//skeleton
+.Polaris-SkeletonPage__Page{
+  padding: 0px;
+}
+.Polaris-SkeletonPage__Content{
+  margin: 0px;
+}
+
+//addon
+.addon-title{
+  display: inline-block;
+}
+
+.modal-spacer{
+  margin:($spacer) (-2rem);
+}
+
+// plan new design css
+.Polaris-DataTable__Table{
+  table-layout: fixed;
+
+  .Polaris-DataTable__Cell--header{
+    padding-top: $spacer * 2;
+    padding-bottom: $spacer * 2;
+  }
+
+  .table-section-title{
+    display: flex;
+    align-items: center;
+  }
+  .Polaris-Navigation__Icon{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: .6rem;
+
+    svg{
+      fill: #5c6ac4 !important;
+      color: #fff !important;
+    }
+  }
+  .Polaris-Icon{
+    display: inline-block;
+  }
+  .Polaris-DataTable__Cell{
+    white-space: normal;
+    position: relative;
+    height: 64.8px;
+
+    &:not(.Polaris-DataTable__Cell--firstColumn){
+      border-left:$border;
+      text-align: center;
+    }
+  }
+  td:nth-child(4),th:nth-child(4) {
+    background-color: $bg-blue!Important;
+  }
+  .plan-disabled{
+    .Polaris-Icon{
+      opacity:0.3;
+    }
+  }
+
+  //mobile
+  @media (max-width: $sm){
+    tbody{
+      display: none;
+    }
+    .Polaris-DataTable__Cell--header{
+      display: block;
+      height: auto;
+    }
+  }
+}
+
+//sticky table row
+.Sticky__tableRow{
+  position: relative;
+
+  th{
+    height: 68.8px;
+  }
+  .Polaris-DataTable__Cell--firstColumn{
+    position: sticky;
+    top: -1px;
+    z-index: 5;
+    color: #202e78;
+  }
+
+  &.plan-row{
+    th:not(.Polaris-DataTable__Cell--firstColumn){
+      position: sticky;
+      top: -1px;
+      z-index: 5;
+    }
+  }
+}
+.jq-toast-single {
+    font-size: 20px;
+    padding: 22px;
+    font-family: -apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;
+    margin-bottom:2rem;
+}
+.close-jq-toast-single {
+    position: absolute;
+    top: 31%;
+    right: 7px;
+    font-size: 36px;
+    cursor: pointer;
+}
+.jq-toast-wrap {
+    width: auto !important;
+    bottom:0;
+}
+.toast-text {
+    margin-right: 22px;
+}
+.Polaris-TopBar__LogoContainer {
+    flex-basis: calc(30rem + env(safe-area-inset-left));
+    padding: 0 0 0 0.7rem;
+}
+.main {
+    margin-top:56px;
+}
+.Sticky__tableRow.plan-row {
+    th {
+        &:not(.Polaris-DataTable__Cell--firstColumn) {
+            top: 55px;
+        }
+    }
+}
+.Sticky__tableRow {
+    .Polaris-DataTable__Cell--firstColumn {
+        top: 55px;
+    }
+}
+.Polaris-Frame-Loading {
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    z-index: 99;
+}
+
+.custom-unstyled-link {
+  &:hover {
+    text-decoration: none;
+    color: var(--p-text,#212b36);
+  }
+}
+.shop-name-top-nav-bar {
+  color: #fff;
+  float: left;
+  margin-left: 0.5em;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-overflow: ellipsis;
+}
+.app-dashboard-link-top-left {
+  max-width: fit-content;
+  margin-top: 0.5em;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.Polaris-ResourceItem__Link{
+  z-index: 3;
+}
+
+/*== New ==*/
+.Polaris {
+
+  
+
+  &-Avatar__Circle {
+    border-radius: 50%;
+  }
+
+  &-TopBar__LogoLink {
+    padding: .6rem .8rem;
+  }
+
+  &-Banner__Sticky {
+    opacity: 0;
+    height: 0;
+
+    &.fadeIn {
+      opacity: 1;
+      height: auto;
+      z-index: 22;
+      position: fixed;
+      top: 56px;
+      right: 0;
+      left: calc(24rem + env(safe-area-inset-left));
+      transition: opacity ease-in-out .24s;
+    }
+
+    .Polaris-Banner {
+      margin: 0;
+    }
+  }
+
+  &-Badge__New {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 10;
+  }
+
+  &-Card {
+
+    .header-with-border-bottom {
+      border-top: 0.1rem solid var(--p-divider);
+      margin-top: 2rem;
+    }
+
+    &__Transparent {
+
+      .Polaris-Card {
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &-CalloutCard__Vertical {
+
+    .Polaris-CalloutCard {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        order: -1;
+        margin-left: 0;
+      }
+
+      &__Content {
+        text-align: center;
+      }
+
+      .Polaris-ButtonGroup {
+          justify-content: center;
+      }
+    }
+  }
+
+  &-Navigation .Polaris-Card--subdued {
+    .Polaris-Card__Section {
+      padding: 2rem 1.6rem;
+    }
+  }
+
+  &-Courses_CenterLayout {
+      align-items: center;
+  }
+
+  &-Skeleton-Resourcelist {
+    .Polaris-SkeletonThumbnail {
+        margin: 0;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+  }
+
+  &-VideoThumbnail__Thumbnail {
+    background-position-y: 32%;
+  }
+
+  &-Theme__Select {
+    text-align: right;
+
+    .Polaris-Select {
+        display: inline-block;
+        width: auto;
+    }
+  }
+
+  &-WinningProducts__Item {
+    position: relative;
+
+    .Polaris-Caption {
+      margin-top: 1rem;
+    }
+
+    .video-icon {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      background-color: #fff;
+      border-radius: 100%;
+      overflow: hidden;
+      z-index: 10;
+      font-size: 20px;
+      border: 2px solid #fff;
+
+      svg {
+        fill: #6371c7;
+      }
+    }
+
+    .Polaris-SkeletonThumbnail {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      height: auto;
+      padding-bottom: 100%;
+    }
+  }
+
+  &-Spinner__Container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(244,246,248,.4);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &-Skeleton {
+
+    &__Caption {
+      margin-top: 1rem;
+    }
+
+    &__MediaCard {
+
+      > .Polaris-Card {
+
+        .Polaris-Layout {
+          margin-top: 0;
+          align-items: center;
+        }
+      }
+      
+      .Polaris-Layout__Section {
+        margin-top: 0;
+
+        &:last-child {
+          padding: 2rem;
+          margin: 0;
+        }
+
+        &--secondary {
+          flex-basis: calc(40% - 4rem);
+        }
+      }
+
+      .Polaris-TextContainer {
+          margin-bottom: 1.6rem;
+      }
+    }
+  }
+
+  &-MediaCard__Centered {
+
+    .Polaris-MediaCard {
+      align-items: center;
+    }
+  }
+
+  &-Modal-Dialog {
+    .StripeElement {
+      outline: none;
+      border: 0.1rem solid #C0CCD4;
+      border-radius: 3px;
+      padding: 0.8rem 1.2rem;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &_Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background: #808080;
+    text-align: center;
+    z-index: 5;
+  }
+}
+
+.with-custom-avatar {
+
+  .Polaris {
+
+    &-Avatar, &-Avatar__Image {
+      border-radius: 0;
+    }
+  }
+}
+
+.Polaris-Page__Plain {
+  .Polaris-Frame-Loading {
+    top: 0;
+  }
+}
+
+.Polaris-Icon__Star {
+
+  svg {
+    fill: #eec200;
+  }
+}
+
+.Polaris-Layout__CustomThreeColumns {
+
+  .Polaris-Layout {
+    margin-top: 0;
+
+    .Polaris-Layout__Section {
+
+      &--oneThird {
+        flex-basis: auto;
+        max-width: calc(33.3333% - 2rem);
+        width: 100%;
+
+        .Polaris-TextStyle--variationStrong {
+          color: #212529;
+        }
+      }
+    }
+  }
+}
+
+.Polaris-Navigation--subNavigationActive {
+  font-weight: 600;
+  color: var(--p-text-primary);
+  background-color: var(--p-background-selected);
+  outline: 0.1rem solid transparent;
+  position: relative;
+}
+
+.toggle-active {
+  display: block !important;
+}
+
+.Polaris-Navigation--subNavigationActive::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -0.8rem;
+  height: 100%;
+  width: 0.3rem;
+  background-color: var(--p-action-primary);
+  border-top-right-radius: var(--p-border-radius-base);
+  border-bottom-right-radius: var(--p-border-radius-base);
+}
+
+.plain-layout {
+  
+  #AppFrameLoadingBar {
+
+    .Polaris-Frame-Loading {
+      top: 0;
+    }
+  }
+}
+
+.Training-Courses-img img {
+  object-fit: contain;
+  padding: 5px;
+}
+
+.spacer-top {
+
+  .Polaris-ResourceList {
+    border-top: 1px solid #e1e3e5;
+  }
+}
+
+form[name="download_theme"] {
+
+  .Polaris-Choice {
+    background: var(--p-surface-selected);
+    padding: 0.6em;
+
+    &:not(:last-of-type) {
+      margin-bottom: .6rem;
+    }
+  }
+}
+
+.Polaris-Button--primary:not(.Polaris-Button--destructive):not(.Polaris-Button--disabled) {
+  background: #5600e3;
+}
+
+@media only screen and (max-width: 489px) {
+  .Polaris-Page__Content {
+    padding: 0rem 1.6rem;
+  }
+}
+
+.Polaris-Card_Training-Course {
+  .Polaris-MediaCard {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.Polaris_Banner-Warning-Button {
+  padding-top: 1.6rem;
+
+  .Polaris-Button {
+    border-color: #e1b878;
+    background: #fff5ea;
+  }
+
+  .Polaris-Button:hover {
+    border-color: #e1b878;
+    background: #fff2e2;
+  }
+}
+
+@import './app/navigation';
+@import './app/topbar';
+@import './app/dashboard';
+@import './app/mentoring-winners';
+@import './app/winning-products';
+@import './app/support';
+@import './app/partners';
+@import './app/plans';
+@import './app/billing';
+@import './app/checkout';
+@import './app/thank-you';
+@import './app/goodbye';
+@import './app/free-trial-expired';
+@import './app/paypal-thank-you';
+@import './app/affiliate';
+@import './app/extended-trial';

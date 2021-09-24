@@ -1,0 +1,158 @@
+// Convert animation to Loop K.0. -- removing soon
+
+.prop{
+    animation-play-state: running;
+}
+
+.prop-pulse{
+    animation-name: prop-pulse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes prop-pulse {
+    0% { transform: scale(1); }
+    50% {  transform: scale(1.05); }
+    100% { transform: scale(1); }  
+}
+
+.prop-up{
+    animation-name: prop-up;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+
+@keyframes prop-up {
+    0% { transform: translateY(0px);  }
+    50%{ transform: translateY(-50px); }
+    100% { transform: translateY(0px);  }  
+}
+
+
+.prop-down{
+    animation-name: prop-down;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+
+@keyframes prop-down {
+    0% { transform: translateY(0px);  }
+    50%{ transform: translateY(50px); }
+    100% { transform: translateY(0px);  }  
+}
+
+.prop-left{
+    animation-name: prop-left;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+
+@keyframes prop-left {
+    0% { transform: translateX(0px);  }
+    50%{ transform: translateX(-50px); }
+    100% { transform: translateX(0px);  }  
+}
+    .prop-right{
+    animation-name: prop-right;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+
+@keyframes prop-right {
+    0% { transform: translateX(0px);  }
+    50%{ transform: translateX(50px); }
+    100% { transform: translateX(0px);  }  
+}
+
+
+.prop-right-mini{
+    animation-name: prop-right-mini;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+
+@keyframes prop-right-mini {
+    0% { transform: translateX(0px);  }
+    50%{ transform: translateX(5px); }
+    100% { transform: translateX(0px);  }  
+}
+
+
+.prop-left-down{
+    animation-name: prop-left-down;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+}    
+@keyframes prop-left-down {
+    0% { transform: translate(0px,0px); }
+    50% { transform: translate(-50px,0px); }
+    100% { transform: translate(-50px,50px); }
+}
+
+
+.prop-right-up{
+    animation-name: prop-right-up;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+}    
+@keyframes prop-right-up {
+    0% { transform: translate(0px,0px); }
+    50% { transform: translate(50px,0px); }
+    100% { transform: translate(50px,-50px); }
+}
+
+
+.prop-swing{
+    animation-name: prop-swing;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}    
+@keyframes prop-swing {
+    0% {   transform: rotate(0deg);}
+    50% {   transform: rotate(40deg); }
+    100% {   transform: rotate(0deg); }
+}
+
+.prop-fade-right{
+    animation-name: prop-fade-right;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+@keyframes prop-fade-right {
+    0%   {   opacity: 0;   transform: translateX(-50px); }
+    35%  {    opacity: 1; transform: translateX(0px); }
+    70% { opacity: 0; transform: translateX(50px); }
+    100% {  opacity: 0; }
+}
+.prop-hover{
+    animation-name: prop-hover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+
+@keyframes prop-hover {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0px); }
+}
+
+.prop-rotate{
+    animation-name: prop-rotate;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-direction: linear ;
+}
+
+@keyframes prop-rotate {
+    0%   {  transform: rotate(0deg); }
+    100%  {  transform: rotate(359deg); }
+}

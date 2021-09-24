@@ -1,0 +1,64 @@
+// Body
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif:      "Poppins", sans-serif;
+$btn-font-weight:             600;
+$display-font-weight:         700;
+$headings-line-height:        1.4;
+$headings-font-weight:        700;
+$display1-weight:             $headings-font-weight;
+$display2-weight:             $headings-font-weight;
+$display3-weight:             $headings-font-weight;
+$display4-weight:             $headings-font-weight;
+
+$font-size-base:              1.0625rem; // 17px
+$line-height-base:            1.64; // 28px
+$h1-font-size:                $font-size-base * 2.94;
+$h2-font-size:                $font-size-base * 2.47;
+$h3-font-size:                $font-size-base * 2;
+$h4-font-size:                $font-size-base * 1.76;
+$h5-font-size:                $font-size-base * 1.64;
+$h6-font-size:                $font-size-base * 1.41;
+
+// Colors
+$primary: #5600e3;
+$secondry: #ED53A4;
+
+$red: #ED53A4;
+$yellow: #F7D202;
+$green: #63DED8;
+$blue: #3490dc;
+$grey: #DBDDEB;
+$white: #FFFFFF;
+
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$orange: #f6993f;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$light-blue: #F6F4FE;
+
+$custom-grey: #F4F6F8;
+$border-color: $custom-grey;
+$input-btn-padding-y-lg:      1rem;
+$input-btn-padding-x-lg:      1.5rem;
+
+$body-text: #2C2C2C;
+$body-text-light: #858585;
+$body-bg: $white;
+$body-bg-alt: #F4F5FC;
+$bg-dark: #D3E4F7;
+$btn-text: $white;
+
+$box-shadow: 0px 3px 80px 0px rgba(14,2,71,0.08);
+
+//breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px, //new
+  xl: 1200px
+) !default;

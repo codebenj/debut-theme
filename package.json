@@ -1,0 +1,66 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-jsx": "^7.12.1",
+        "@babel/preset-react": "^7.12.10",
+        "axios": "^0.21.1",
+        "bootstrap": "^4.6.0",
+        "browser-sync": "^2.26.13",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "cross-env": "^5.2.1",
+        "jquery": "^3.6.0",
+        "laravel-mix": "^5.0.9",
+        "lodash": "^4.17.21",
+        "popper.js": "^1.12",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "resolve-url-loader": "^3.1.2",
+        "sass": "^1.32.8",
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "@babel/core": "^7.13.10",
+        "@babel/plugin-transform-react-jsx": "^7.12.10",
+        "@babel/preset-env": "^7.13.10",
+        "@paypal/react-paypal-js": "^5.1.0",
+        "@sentry/react": "^6.5.1",
+        "@sentry/tracing": "^6.7.1",
+        "@shopify/polaris": "^6.1.0",
+        "@shopify/polaris-icons": "^4.5.0",
+        "@stripe/react-stripe-js": "^1.4.0",
+        "@stripe/stripe-js": "^1.13.1",
+        "bootstrap-select": "^1.13.18",
+        "exit-intent": "^1.1.0",
+        "jquery-debounce-throttle": "^1.0.6-rc.0",
+        "lazysizes": "^5.3.2",
+        "linkmink": "^3.0.1",
+        "moment": "^2.29.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "react-gtm-module": "^2.0.11",
+        "react-load-script": "0.0.6",
+        "react-moment": "^1.1.1",
+        "react-router-dom": "^5.2.0",
+        "slick-carousel": "^1.8.1",
+        "swr": "^0.4.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            "@babel/plugin-proposal-class-properties"
+        ]
+    }
+}

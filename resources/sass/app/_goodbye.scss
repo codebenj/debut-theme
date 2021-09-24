@@ -1,0 +1,48 @@
+#app-goodbye {
+
+  .Polaris-Layout {
+    margin-left: -1rem;
+  }
+
+  .Polaris-Layout__TwoColumns {
+
+    @media screen and (min-width: 768px) {
+
+      .Polaris-Layout {
+        margin-left: 0;
+        justify-content: flex-start;
+  
+        &__Section {
+          max-width: calc(50% - 3rem);
+          min-width: auto;
+          margin-left: 0;
+          flex: 1 1 50%;
+
+          &:not(:last-of-type):first-of-type {
+            padding-right: 3rem;
+          }
+  
+          &:not(:first-of-type):last-of-type {
+            padding-left: 3rem;
+            border-left: thin solid #dee2e6;
+          }
+        }
+      }
+    }
+  }
+
+  .Polaris-Card__Feedback {
+
+    .Polaris-Card {
+
+      &__Header, &__Section > .Polaris-DisplayText:first-of-type  {
+        max-width: 90vw;
+        width: 655px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 15px;
+      }
+    }
+  }
+}

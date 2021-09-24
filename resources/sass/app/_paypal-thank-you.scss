@@ -1,0 +1,56 @@
+#app-paypal-thank-you {
+    .Polaris-Page__Content {
+        .Polaris-Card > .Polaris-Card__Section {
+            max-width: 66.666%;
+            margin: auto;
+        }
+        @media (max-width: 30.625em){
+          .Polaris-Card > .Polaris-Card__Section {
+            max-width: 100%;
+            padding: 1.5rem;
+          }
+        }
+    }
+    .Polaris-List {
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+    }
+    .Polaris-TextContainer > *:not(:first-child) {
+        margin-top: 1.6rem;
+    }
+    .Polaris-DisplayText--sizeLarge{
+        margin-bottom: 1.5rem !important;
+    }
+    .Polaris-DisplayText--sizeLarge h2{
+        font-weight: 600;
+    }
+    .Polaris-Link{
+        text-decoration: none;
+    }
+    .Polaris-Link:hover{
+        text-decoration:underline;
+    }
+
+    .Polaris-Testimonials {
+    padding: 2rem 3rem;
+
+    > .Polaris-Stack {
+      justify-content: space-between;
+      margin: 0;
+
+      > .Polaris-Stack__Item {
+          margin-left: 0;
+
+        &:first-child {
+          flex-basis: auto;
+          width: 7.6rem;
+          margin-right: 1rem;
+        }
+
+        &:last-child {
+          flex-basis: calc(100% - 9rem);
+        }
+      }
+    }
+  }
+}

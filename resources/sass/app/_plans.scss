@@ -1,0 +1,78 @@
+#app-plans {
+
+  .Polaris-DataTable-custom {
+    .Polaris-DataTable__Cell--header {
+      border-bottom: 0.1rem solid rgba(201, 204, 207, 1);
+    }
+  }
+
+  .Polaris-ResourceList__FAQs {
+    .Polaris-Heading {
+      padding-right: 3rem;
+    }
+  }
+
+  .Polaris-DataTable {
+
+    .addon-disabled {
+      opacity: .3;
+    }
+
+    &__ScrollContainer {
+      overflow: unset;
+    }
+
+    .Polaris-DataTable__Table .Polaris-DataTable__Cell {
+      position: initial;
+    } 
+
+    &__Table {
+      border-collapse: collapse;
+
+      tr.Polaris-DataTable__TableRow {
+  
+        &_Sticky {
+            position: relative;
+  
+            .Polaris-DataTable__Cell--firstColumn, &:first-child > * {
+              position: -webkit-sticky;
+              position: sticky;
+              z-index: 5;
+              top: 55px;
+            }
+        }
+      }
+  
+      thead .Polaris-Badge {
+        position: absolute;
+        top: -12px;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: 768px) {
+          position: relative;
+          top: -45px;
+          transform: none;
+        }
+      }
+
+      @media only screen and (min-width: 770px) {
+        thead {
+          .StartPlan-HeaderContainer {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__StickyHeader {
+
+      .Polaris-Icon svg, .Polaris-Heading {
+        fill: #202e78;
+      }
+    }
+
+    .Polaris-DataTable__Cell--header {
+      border-bottom: 0.1rem #c9cccf solid;
+   }
+  }
+}

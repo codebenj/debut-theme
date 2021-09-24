@@ -1,0 +1,475 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.addon-img-wrapper{
+  cursor: pointer;
+}
+.tiktok{
+  opacity: 0.5;
+  &:hover{
+    opacity: 0.75;
+  }
+}
+.icon-wrapper{
+  position: relative;
+  display:block;
+}
+.hover-icon{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+
+  &:before{
+    @include transition($transition-base);
+  }
+
+  &:hover{
+    &:before{
+      transform: scale(1.5);
+    }
+  }
+}
+
+.addon-img-wrapper{
+  position: relative;
+  .addon-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include transition($transition-base);
+  }
+}
+.slide:hover .addon-icon{
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.upAndDown{
+  -webkit-animation: action;
+  animation: action;
+  margin-bottom: 1rem;
+  transition-timing-function: ease-in-out,ease-in, ease, linear;
+}
+.animated.delay-1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.animated.delay-2 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.animated.delay-3 {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.animated.delay-4 {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@-webkit-keyframes action {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(1rem);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+@keyframes action {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(1rem);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+.bg-shopify{
+  background-image: url('/images/shopify-free-trial-debutify.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.toggleModal,#formShop .btn-primary, #formShop2 .btn-primary, .modal .btn-primary{
+  text-transform: uppercase!important;
+}
+
+.mb-gutter{
+  margin-bottom: $grid-gutter-width;
+}
+
+//videos
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img.rounded,iframe.rounded{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.pricing-tables{
+  .card-body{
+    padding:0;
+  }
+  .card-title{
+    text-align: center;
+    margin:0;
+    padding: 1rem;
+  }
+  .card-header{
+    text-align: center;
+    background-color: $custom-grey;
+  }
+  .table{
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    margin:0;
+
+    .no-icon{
+      &:before{
+       display:none;
+      }
+    }
+  }
+  td{
+    text-align: left;
+    vertical-align: middle;
+    & + td{
+      text-align: right;
+    }
+    &:before{
+      content: "\f058";
+      font-family: "Font Awesome 5 Free";
+      font-weight:900;
+      margin-right: 5px;
+      color:$primary;
+    }
+  }
+  .plan-disabled{
+    opacity:0.3;
+
+    td{
+      &:before{
+        content: "\f057";
+        color:$danger;
+      }
+    }
+  }
+}
+
+.badge{
+  vertical-align: middle;
+}
+
+.display-1, .display-2, .display-3, .display-4{
+  font-weight: $display-font-weight;
+  @include media-breakpoint-down(md) {
+    font-size:1.75rem;
+  }
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+  font-weight: $display-font-weight;
+  text-transform: capitalize;
+}
+
+a{
+  font-weight: $btn-font-weight;
+
+  .fab{
+    font-weight: initial;
+  }
+}
+
+.btn{
+  text-transform: capitalize;
+}
+
+body{
+  background-color: $custom-grey;
+}
+.body-wrapper{
+  background-color: $body-bg;
+  max-width: 1600px;
+  margin: auto;
+}
+main{
+  overflow: hidden;
+}
+
+.image-banner{
+	pointer-events: none;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  img{
+    position:absolute;
+    bottom: 0;
+  }
+}
+.image-left{
+   width:400px;
+   left:0;
+   margin-bottom: -45px;
+   margin-left:-200px;
+   @include media-breakpoint-down(md) {
+     width:200px;
+		 margin-left:-100px;
+   }
+}
+.image-right{
+   width:400px;
+   right:0;
+   margin-bottom: -30px;
+   margin-right:-200px;
+   @include media-breakpoint-down(md) {
+     width:200px;
+		 margin-right:-100px;
+   }
+}
+
+.modal-content{
+  border: 0px;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+//landing
+.card{
+  // @include transition($transition-base);
+  // &:hover{
+  //   transform: scale(1.05);
+  // }
+}
+
+.section-addon .card{
+  &:hover{
+    border-color: $primary;
+
+    h6{
+      color: $primary;
+    }
+  }
+}
+.btn-banner{
+  background-color: #202529;
+  border-color: #202529;
+  color: #fff!important;
+  &:focus{
+    box-shadow: none!important;
+  }
+}
+.bg-gradient{
+  background: $primary;
+  background: linear-gradient(185deg, rgba(86,0,227,1) 30%, rgba(237,83,164,1) 100%);
+}
+.btn-xl{
+  padding: 1.5rem 2rem;
+}
+
+.carousel-inner{
+  width: 80%;
+  margin: auto;
+}
+.carousel-control-prev{
+  width: 10%;
+  left: 0%;
+}
+.carousel-control-next{
+  width: 10%;
+  right: 0%;
+}
+
+.fb-review{
+  overflow: hidden;
+  iframe{
+    overflow: hidden;
+  }
+}
+
+.fb_dialog, .fb_iframe_widget iframe{
+  z-index: 1000!important;
+}
+
+
+label[for]{
+  cursor: pointer;
+}
+
+
+.site-header{
+  background-color: $body-bg;
+  z-index: 10;
+  border-bottom: 1px solid $custom-grey;
+  // position: sticky;
+  top:0;
+}
+
+.section{
+  padding-top: $spacer*5;
+  padding-bottom: $spacer*5;
+}
+
+// masonry grid
+.masonry {
+  column-count: 3;
+  column-gap: 1em;
+  line-height: 0;
+
+  &.masonry-1{
+    column-count: 1;
+  }
+  &.masonry-2{
+    column-count: 2;
+  }
+  &.masonry-3{
+    column-count: 3;
+  }
+  &.masonry-4{
+    column-count: 3;
+  }
+
+  @include media-breakpoint-down(md) {
+    column-count: 1!important;
+  }
+}
+.item {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  line-height: 0;
+}
+
+.fb-post{
+  display: block!important;
+}
+
+.navbar-toggler{
+  outline-color:$primary!important;
+  padding: $spacer;
+
+  .fas{
+    font-size: 20px;
+  }
+}
+
+.toggleModal .fas{
+  @include transition(transform .15s ease-in-out);
+}
+.toggleModal:hover .fas{
+  // transform: translateX(30%);
+}
+
+img{
+  max-width: 100%;
+}
+
+.bg-grey{
+  background-color: $custom-grey;
+}
+
+.accordion-section{
+  .btn{
+    text-align: left;
+    &:after {
+        content: "\f106";
+        font-family: "Font Awesome 5 Free";
+        font-weight:900;
+        float: right;
+    }
+    &.collapsed:after {
+      content: "\f107";
+    }
+  }
+  .card{
+    border:0;
+  }
+  .card-header{
+    border:0;
+    background-color: $custom-grey;
+    border-radius: $border-radius!important;
+  }
+}
+.main-section{
+	min-height:calc(100vh - 87px);
+}
+.shopify-wrapper{
+	display: inline-block;
+	border-radius: 50px;
+	background-color:rgba(255,255,255,0.2);
+}
+//mailerLite
+
+//download email
+.ml-form-embedWrapper{
+  max-width: 100%!important;
+}
+.ml-form-embedBodyHorizontal,.ml-form-formContent{
+  padding: 0px!important;
+}
+
+//footer newsletter
+.ml-form-horizontalRow{
+  display:flex;
+
+  .ml-input-horizontal{
+    flex:auto;
+  }
+
+  .ml-button-horizontal, .ml-input-horizontal{
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      .btn{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+.row-success{
+  text-align: center;
+  p{
+    margin-bottom: 0px;
+  }
+}
+
+.ml-error input{
+  border-color: #ED53A4;
+  padding-right: 2.35rem;
+  background-repeat: no-repeat;
+  background-position: center right calc(2.35rem / 4);
+  background-size: calc(2.35rem / 2) calc(2.35rem / 2);
+  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ED53A4' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+}

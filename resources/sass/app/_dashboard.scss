@@ -1,0 +1,67 @@
+#app-dashboard {
+
+  .Polaris-Card__DashboardProgress {
+
+    .Polaris-Icon__Placeholder {
+      opacity: 0;
+    }
+  }
+
+  .mentoring-winners {
+    .Polaris-ResourceItem__Actions {
+      display: flex;
+    }
+
+    .Polaris-ResourceItem__Disclosure {
+      display: none;
+    }
+  }
+
+  .Polaris-Card_WinningProducts {
+    position: relative;
+    overflow: hidden;
+
+    .spacer-bottom {
+      .Polaris-TextContainer {
+        display: flex;
+
+        .Polaris-Heading:nth-child(1) {
+          flex: 1 1 auto;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .Polaris-Heading:nth-child(2) {
+          margin-top: 0;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .Polaris-Layout__Section--oneThird {
+      max-width: calc(100% - 2rem);
+    }
+
+    @media only screen and (max-width: 600px) {
+      .Polaris-Layout {
+        display: list-item;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      .Polaris-Layout__Section--oneThird {
+        max-width: calc(33.3333% - 2rem);
+      }
+    }
+  }
+  .Polaris-Badge{
+    background-color: #bbe5b3;
+  }
+
+  .Polaris-Card_Partner {
+    .Polaris-Stack__Item span:not(.Polaris-Button__Content):not(.Polaris-Button__Text) {
+      margin-left: 1.6rem;
+    }
+  }
+}

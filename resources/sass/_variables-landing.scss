@@ -1,0 +1,149 @@
+// Color Scheme
+$primary: #5600E3;
+$secondary: #2DFFB3; 
+$light:#F7F4FF;
+$dark:#260759;
+$gray:#A9B0BA;
+
+$success:#0DC06A;
+$info:#7FCDFF;
+$warning:#E77D41;
+$danger:#D32424;
+
+$headings-color: #212529;
+$body-color: #444444;
+
+$gray-600:#737373;
+$gray-500:#D1D1D1;
+$gray-400:#F0F0F0;
+$gray-300:#F4F4F4;
+$gray-200:#FBFBFB;
+
+
+// Typography
+$font-family-base:  "Poppins", sans-serif;
+$font-size-base:1.125rem; 
+
+$font-weight-lighter: 400;
+$font-weight-light: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+$small-font-size: 13;
+$lead-font-size: 22;
+$lead-font-weight: 400;
+
+
+// // Headers
+// $h1-font-size: 39;
+// $h2-font-size: 32;
+// $h3-font-size: 28;
+// $h4-font-size: 22;
+// $h5-font-size: 20;
+// $h6-font-size: 16;
+
+
+// // Display
+// $display1-size:78px;
+// $display2-size:68px;
+// $display3-size:58px;
+// $display4-size:48px;
+
+// $display1-weight:700;
+// $display2-weight:700;
+// $display3-weight:700;
+// $display4-weight:700;
+
+
+// Thumbnail
+$thumbnail-padding:5px;
+$thumbnail-bg:#EEEEEE;
+$thumbnail-border-width:0;
+
+
+// Badges
+$badge-font-size: 17;
+$badge-padding-y: .755em;
+$badge-pill-padding-x: 1.42em;
+
+
+// Navbar
+$navbar-light-color: $headings-color;
+$navbar-nav-link-padding-x:.8rem;
+$navbar-light-active-color: #737373;
+// $navbar-padding-y: 10px;
+
+
+// Modal
+$modal-lg: 927px;
+$modal-md: 725px;
+$modal-sm: 612px;
+$modal-content-border-width:0px;
+
+
+// Dropdown
+$dropdown-font-size:18px;
+$dropdown-link-active-bg: #F7F4FF;
+$dropdown-link-active-color: #212529;
+$dropdown-border-color: #F2F2F2;
+
+
+// Card
+$card-border-color: #F2F2F2;
+
+
+//Table
+$table-striped-order: even;
+$table-accent-bg: #F7F4FF;
+$table-bg:#fff;
+$table-border-color: #DADDDF;
+
+
+// Shadow
+$box-shadow: 0px 4px 20px 10px rgba(112, 120, 126, 0.05);
+$box-shadow-sm: 0px 0px 18px 7px rgba(176, 194, 216, 0.04);;
+
+
+// Buttons
+$btn-border-width: 2px;
+$btn-border-radius: 3px;
+$btn-border-radius-lg:3px;
+$btn-border-radius-sm:3px;
+$btn-font-weight: 600;
+
+
+//Input
+$input-bg:  #F8F8F8;
+$input-group-addon-bg: #F8F8F8;
+$input-group-addon-color:#6C757D;
+$input-placeholder-color:#6C757D;
+
+$input-border-radius:4.8px;
+$input-border-radius-sm:4.8px;
+$input-border-radius-lg:4.8px;
+
+$input-btn-padding-y-sm: .49rem;
+$input-btn-padding-y: .82rem; 
+$input-btn-padding-y-lg: 1.12rem; 
+
+$input-btn-padding-x-sm: .6rem; 
+$input-btn-padding-x: .8rem; 
+$input-btn-padding-x-lg: 1.5rem; 
+
+$input-btn-font-size-sm:18;
+$input-btn-font-size:20;
+$input-btn-font-size-lg:24;
+
+$form-feedback-icon-invalid: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ED53A4' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
+$custom-checkbox-indicator-border-radius: 2px;
+
+
+// Border
+$border-radius: 8px;
+$border-radius-lg: 29px;
+$border-color:#D1D1D1;
+$border-width: 1px;
+
+
+
+

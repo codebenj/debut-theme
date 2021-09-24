@@ -1,0 +1,58 @@
+#app-partners {
+  .Polaris-Page__Content {
+    .Polaris-Layout__CustomThreeColumns {
+      .Polaris-Layout {
+        align-items: unset;
+
+        @media screen and (max-width: 768px) {
+          .Polaris-Layout__Section--oneThird {
+            flex-basis: auto;
+            max-width: calc(50% - 2rem);
+            width: 100%;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          .Polaris-Layout__Section--oneThird {
+            max-width: calc(100% - 2rem);
+          }
+        }
+      }
+      .Polaris-Badge {
+        word-break: break-word;
+      }
+      .Polaris-Stack__Item {
+        flex: 0 auto;
+      }
+      .Content-Container p {
+        word-break: break-word;
+      }
+    }
+  }
+
+  .Polaris-Card-Container {
+    height: 100%;
+
+    .Polaris-Card {
+      justify-content: space-between;
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+
+      .Content-Container {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-height: 60px;
+      }
+      
+      .Polaris-Card__Section {
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        display: flex;
+      }
+    }
+  }
+}

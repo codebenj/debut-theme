@@ -1,0 +1,52 @@
+#app-free-trial-expired {
+  .Polaris-Testimonial__Custom {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    border: 1px solid #dee2e6;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .Polaris-Page__Content > div > .Polaris-Card__Section {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $sm){
+    .Polaris-Page__Content > div > .Polaris-Card__Section {
+      -ms-flex: 0 0 95.333333%;
+      flex: 0 0 95.333333%;
+      max-width: 95.333333%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (max-width: 40.625em){
+    .Polaris-Layout__CustomThreeColumns .Polaris-Layout .Polaris-Layout__Section--oneThird {
+      max-width: calc(95.3333% - 2rem);
+    }
+
+    .Polaris-Modal-Dialog__Modal {
+      width: 98%;
+      margin: 0 auto;
+    }
+  }
+
+  div[data-portal-id="modal-Polarisportal3"] .Polaris-Modal-Dialog__Modal {
+    max-width: 70rem;
+  }
+}
+.Polaris-Modal-Dialog__Container > div > .Polaris-Modal-Dialog__Modal{
+  background: var(--p-surface, white);
+  border-radius: var(--p-border-radius-wide, 6px);
+      box-shadow: var(--p-modal-shadow, 0 31px 41px 0 rgba(32, 42, 53, 0.2), 0 2px 16px 0 rgba(32, 42, 54, 0.08));
+}
+

@@ -1,0 +1,56 @@
+#app-extended-trial {
+  .Polaris-Page__Content {
+    .Polaris-Layout__CustomThreeColumns {
+      .Polaris-Layout {
+        align-items: unset;
+        display: -webkit-box;
+      }
+    }
+  }
+
+  .Polaris-Layout__Section--oneThird {
+    max-width: calc(100% - 2rem);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Polaris-Layout {
+      display: list-item;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .Polaris-Layout__Section--oneThird {
+      max-width: calc(33.3333% - 2rem);
+    }
+  }
+
+  .Polaris-Card-Container {
+    height: 100%;
+
+    .Polaris-Card {
+      justify-content: space-between;
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+
+      .Content-Container {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        p {
+          word-break: break-word;
+        }
+
+      }
+      
+      .Polaris-Card__Section {
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        display: flex;
+      }
+    }
+  }
+}

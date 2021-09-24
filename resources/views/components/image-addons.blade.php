@@ -1,0 +1,1 @@
+<img data-src="{{ $addon->thumbnail }}&&image_play_button=true&image_play_button_color=68656080" alt="{{ $addon->name }}" class="img-fluid rounded lazyload" width="100%">
